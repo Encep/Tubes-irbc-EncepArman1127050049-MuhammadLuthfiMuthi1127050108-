@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:padding="15dip"
+        tools:ignore="ScrollViewSize,ObsoleteLayoutParam" >
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/txt2"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="150px"
+            android:layout_height="100px"
+            android:layout_below="@+id/txt"
+            android:layout_centerHorizontal="true"
+            android:text="Jawaban yang Benar: 
+		  1.A 	2.A   3.B   4.A    5.A   6.B  7.A  8.A  9.A  10.B"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,PxUsage" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="150px"
+            android:layout_height="100px"
+            android:layout_below="@+id/txt"
+            android:layout_centerHorizontal="true"
+            android:text="Jawaban yang Benar: 
+		  1.A 	2.A   3.B   4.A    5.A   6.B  7.A  8.A  9.A  10.B"
+            android:textSize="16sp"
+            tools:ignore="DuplicateIds,HardcodedText,PxUsage" />
+
+        <TextView
+            android:id="@+id/txtSelamat"
+            android:layout_width="180sp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt2"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:text="HASILNYA"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/selesai"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/text"
+            android:layout_below="@+id/txtSelamat"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            android:onClick="selesai"
+            android:text="Selesai"
+            android:textStyle="bold"
+            tools:ignore="UnknownIdInLayout,HardcodedText" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/selesai"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="16dp"
+            android:text="Nilai anda adalah :"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</ScrollView>
